@@ -42,6 +42,6 @@ s_width = st.slider('Sepal Width', 0.0, 10.0)
 p_width = st.slider('Petal Width', 0.0, 10.0)
 p_length = st.slider('Petal Length', 0.0, 10.0)
 if st.button('Predict'):
-	species_type = predictions(s_length,s_width,p_length,p_width)
+	species_type = prediction(s_length,s_width,p_length,p_width)
 	st.write('Species predicted:', species_type)
 	st.write('Accuracy score:', score)
